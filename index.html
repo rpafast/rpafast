@@ -1,1 +1,94 @@
-hello rpafast
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPAFast</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        .navbar {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 100px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') center center no-repeat;
+            background-size: cover;
+            color: white;
+            animation: SlideDown 1s ease-in-out;
+        }
+        .features-section {
+            background: #ffffff;
+            padding: 50px 15px;
+        }
+        .feature {
+            transition: transform 0.5s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        @keyframes SlideDown {
+            0% { opacity: 0; transform: translateY(-10%); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>RPASolutions</h1>
+</div>
+
+<div class="hero-section">
+    <h2>Welcome to the Future of Automation</h2>
+    <p>Explore our cutting-edge RPA tools and transform your business.</p>
+</div>
+
+<div class="features-section">
+    <div class="feature">
+        <h3>Automate Everything</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+        <h3>Cloud-Based Solutions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+        <h3>Analytics and Reports</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 RPAFast. All rights reserved.</p>
+</div>
+
+<script>
+    // JavaScript for additional functionality such as loading animation
+    window.onload = function() {
+        // Example: Animate Feature sections with JavaScript
+        const featureElements = document.querySelectorAll('.feature');
+        featureElements.forEach((feature, index) => {
+            setTimeout(() => {
+                feature.style.opacity = 1;
+                feature.style.transform = "translateX(0)";
+            }, 300 * index);
+        });
+    };
+</script>
+</body>
+</html>
