@@ -9,7 +9,16 @@
     <meta name="robots" content="index,follow">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
-        body {
+
+
+html {
+    height: 100%;
+}
+        
+        body {    
+            display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 使用视口高度单位(vh)确保body至少与视口一样高 */
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -35,6 +44,8 @@
         .content-section {
             margin: 2rem auto;
             max-width: 800px;
+                flex: 1; /* 使内容区域能够动态扩展 */
+
         }
         .content-section h3 {
             color: #007bff;
