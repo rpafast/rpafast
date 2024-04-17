@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPAFast</title>
+    <title>RPAFast - Home</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -12,7 +12,7 @@
             background: #f0f0f0;
         }
         .navbar {
-            background: #333;
+            background: #007bff;
             color: white;
             padding: 15px;
             text-align: center;
@@ -25,25 +25,26 @@
             color: white;
             animation: SlideDown 1s ease-in-out;
         }
-        .features-section {
-            background: #ffffff;
+        .content-section {
             padding: 50px 15px;
-        }
-        .feature {
-            transition: transform 0.5s;
-        }
-        .feature:hover {
-            transform: translateY(-10px);
+            text-align: center;
         }
         .footer {
-            background: #333;
+            background: #007bff;
             color: white;
             text-align: center;
             padding: 30px 15px;
         }
         @keyframes SlideDown {
-            0% { opacity: 0; transform: translateY(-10%); }
+            0% { opacity: 0; transform: translateY(-100px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -54,41 +55,25 @@
 </div>
 
 <div class="hero-section">
-    <h2>Welcome to the Future of Automation</h2>
-    <p>Explore our cutting-edge RPA tools and transform your business.</p>
+    <h2>Welcome to the Future of Automation with RPAFast</h2>
+    <p>Unleash the full potential of your business with our advanced RPA tools.</p>
 </div>
 
-<div class="features-section">
-    <div class="feature">
-        <h3>Automate Everything</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="feature">
-        <h3>Cloud-Based Solutions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="feature">
-        <h3>Analytics and Reports</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
+<div class="content-section">
+    <h3>Why RPA is the Unsung Hero of Tech</h3>
+    <p>RPA, or Robotic Process Automation, is often the most underestimated power in the technology realm. What you might not realize is that RPA is the silent accelerator that boosts efficiency, reduces errors, and transforms businesses into digital powerhouses.</p>
+    
+    <h3>Our Commitment to Innovation</h3>
+    <p>At RPAFast, we're continually pushing the boundaries of what's possible with our RPA tools. We provide solutions that are not just about automation, but about creating a smart and seamless workflow that propels your business forward.</p>
+    
+    <h3>Contact Us</h3>
+    <p>Have any questions? Reach out to us at <a href="mailto:rpafast@gmail.com">rpafast@gmail.com</a></p>
 </div>
 
 <div class="footer">
     <p>&copy; 2024 RPAFast. All rights reserved.</p>
+    <p>Email us at <a href="mailto:rpafast@gmail.com">rpafast@gmail.com</a></p>
 </div>
 
-<script>
-    // JavaScript for additional functionality such as loading animation
-    window.onload = function() {
-        // Example: Animate Feature sections with JavaScript
-        const featureElements = document.querySelectorAll('.feature');
-        featureElements.forEach((feature, index) => {
-            setTimeout(() => {
-                feature.style.opacity = 1;
-                feature.style.transform = "translateX(0)";
-            }, 300 * index);
-        });
-    };
-</script>
 </body>
 </html>
